@@ -62,6 +62,7 @@ a {
 
 body {
   display: flex;
+  flex-direction: column;
   color: #FFFFFF;
   font-family: "Germania One";
 }
@@ -181,4 +182,38 @@ body main .container .project-container .project-cards .diet {
 body main .container .project-container .project-cards .screen {
   width: 80%;
   border-radius: 15px;
+}
+body footer .contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  height: 100px;
+  background-color: #1A1A1A;
+}
+body footer .contact-icons a {
+  cursor: pointer;
+}
+body footer i:hover {
+  transform: scale(1.05) translateY(-4px) rotate(-2deg);
+}
+body footer .copy-modal {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #C7FEB0;
+  color: #1A1A1A;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+body footer .copy-modal.visible {
+  opacity: 1;
+}
+body footer .copy-modal.hidden {
+  opacity: 0;
 }/*# sourceMappingURL=app.css.map */

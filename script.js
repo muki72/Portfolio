@@ -40,5 +40,26 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.forEach(el => observer.observe(el));
 });
 
+// copy clipboard
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            showCopyModal();
+        })
+        .catch(err => {
+            console.error('Erreur lors de la copie :', err);
+        });
+}
+
+function showCopyModal() {
+    const modal = document.getElementById('copy-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('visible');
+
+    setTimeout(() => {
+        modal.classList.remove('visible');
+        modal.classList.add('hidden');
+    }, 2000); // 2 secondes
+}
 
 

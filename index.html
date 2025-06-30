@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
     <title>Document</title>
@@ -187,6 +190,23 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div class="contact-icons">
+
+            <a href=" https://github.com/muki72" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+
+            <a onclick="copyToClipboard('theo.jean.pro@gmail.com')" title="Email">
+                <i class="fa-solid fa-at"></i>
+            </a>
+
+            <a onclick="copyToClipboard('muki_72')" title="Discord">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+        </div>
+        <div id="copy-modal" class="copy-modal hidden">Copié dans le presse-papiers</div>
+
+
+    </footer>
     <script src="script.js"></script>
 </body>
 

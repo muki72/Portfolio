@@ -83,12 +83,13 @@ a {
 
 body {
     display: flex;
+    flex-direction: column;
     color: $color-white;
     font-family: "Germania One";
 
     main {
         width: 100%;
-        background: #1A1A1A;
+        background: $color-black;
 
 
 
@@ -215,6 +216,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: 3em;
+
                 .project-cards {
                     display: flex;
                     flex-direction: row;
@@ -249,6 +251,48 @@ body {
                 }
             }
 
+        }
+    }
+
+    footer {
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10%;
+            height: 100px;
+            background-color: $color-black;
+
+            a {
+                cursor: pointer;
+            }
+        }
+
+        i:hover {
+            transform: scale(1.05) translateY(-4px) rotate(-2deg);
+        }
+
+        .copy-modal {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $color-green;
+            color: $color-black;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-size: 16px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            z-index: 1000;
+        }
+
+        .copy-modal.visible {
+            opacity: 1;
+        }
+
+        .copy-modal.hidden {
+            opacity: 0;
         }
     }
 }
