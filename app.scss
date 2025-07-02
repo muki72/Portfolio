@@ -220,6 +220,17 @@ body {
                 flex-direction: column;
                 gap: 3em;
 
+                .icon {
+                    margin-right: 20px;
+                }
+
+
+                .chip {
+                    width: 180px;
+                    height: 180px;
+                }
+
+
                 .project-cards {
                     display: flex;
                     flex-direction: row;
