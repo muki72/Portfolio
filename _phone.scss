@@ -1,0 +1,74 @@
+@media (max-width: 800px) {
+    .icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 2em;
+
+    }
+
+    body {
+
+        main {
+            header {
+                height: 50vh;
+                padding: 4em 1em;
+
+                h1 {
+                    font-size: 5em;
+                }
+            }
+
+            .container {
+                margin: 0px;
+
+                p {
+                    font-size: 1em;
+                }
+
+                .skill-container {
+                    .skill-cards {
+                        gap: 3%;
+                    }
+
+                }
+
+                .project-container {
+                    .show {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .project-cards {
+                        .card {
+                            border: none;
+                            border-radius: 0;
+                            padding: 1em;
+                            margin: 20px;
+                        }
+
+                        .jack {
+                            h3 {
+                                font-size: 1.5em;
+                            }
+
+                            .action {
+                                gap: 1%;
+
+                                button {
+                                    width: 150px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

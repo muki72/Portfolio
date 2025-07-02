@@ -13,6 +13,9 @@ $border-radius: 15px;
 $text-shadow-green: 0px 0px 10px #C7FEB0;
 $text-shadow-black: 2px 2px 5px #1A1A1A;
 
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -140,7 +143,6 @@ body {
             margin: 30vh 200px;
 
             h2 {
-                font-size: 5em;
                 margin-top: 2em;
                 text-align: center;
                 background-image: url('assets/background.png');
@@ -159,7 +161,7 @@ body {
 
             p {
                 text-align: center;
-                margin: 3em;
+                margin: 2em;
 
             }
 
@@ -225,10 +227,7 @@ body {
                 }
 
 
-                .chip {
-                    width: 180px;
-                    height: 180px;
-                }
+
 
 
                 .project-cards {
@@ -402,4 +401,10 @@ body {
             opacity: 0;
         }
     }
+
+
 }
+
+@import '_tab.scss';
+@import '_phone.scss';
+@import '_small.scss';

@@ -1,0 +1,55 @@
+@media (max-width: 600px) {
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 1.5em;
+
+    }
+
+    body {
+
+
+        main {
+
+
+            header {
+                height: 50vh;
+                padding: 4em 1em;
+
+                h1 {
+                    font-size: 2em;
+                }
+            }
+
+            .container {
+                margin: 1em;
+
+                .project-container {
+                    .project-cards {
+                        .jack {
+                            h3 {
+                                font-size: 1em;
+                            }
+
+                            .action {
+                                gap: 1%;
+
+                                button {
+                                    width: 80px;
+                                    font-size: 0.3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
