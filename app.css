@@ -63,12 +63,15 @@ a {
 body {
   display: flex;
   flex-direction: column;
-  color: #FFFFFF;
   font-family: "Germania One";
+  background-image: url("assets/grid.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 body main {
   width: 100%;
-  background: #1A1A1A;
 }
 body main header {
   position: relative;
@@ -153,7 +156,7 @@ body main .container .skill-container .skill-cards .card .icon-text {
   visibility: hidden;
   transition: visibility 1s ease;
   margin: 0;
-  color: white;
+  color: #C7FEB0;
   text-shadow: none;
   font-size: small;
 }
@@ -170,6 +173,7 @@ body main .container .project-container .project-cards {
 }
 body main .container .project-container .project-cards .card {
   border: solid 2px #C7FEB0;
+  background-color: #1A1A1A;
   border-radius: 15px;
   padding: 5em;
 }
@@ -186,9 +190,11 @@ body main .container .project-container .project-cards .screen {
 body footer .contact-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10%;
   height: 100px;
   background-color: #1A1A1A;
+  border-top: solid 2px #C7FEB0;
 }
 body footer .contact-icons a {
   cursor: pointer;
@@ -198,7 +204,7 @@ body footer i:hover {
 }
 body footer .copy-modal {
   position: fixed;
-  bottom: 10px;
+  bottom: 105px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #C7FEB0;

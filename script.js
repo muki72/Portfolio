@@ -51,6 +51,7 @@ function copyToClipboard(text) {
         });
 }
 
+//modal "Copié dans le presse-papiers"
 function showCopyModal() {
     const modal = document.getElementById('copy-modal');
     modal.classList.remove('hidden');

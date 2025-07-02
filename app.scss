@@ -84,12 +84,15 @@ a {
 body {
     display: flex;
     flex-direction: column;
-    color: $color-white;
     font-family: "Germania One";
+    background-image: url('assets/grid.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     main {
         width: 100%;
-        background: $color-black;
 
 
 
@@ -201,7 +204,7 @@ body {
                             visibility: hidden;
                             transition: visibility 1s ease;
                             margin: 0;
-                            color: white;
+                            color: $color-green;
                             text-shadow: none;
                             font-size: small;
 
@@ -223,8 +226,10 @@ body {
                     justify-content: center;
                     padding-top: 2em;
 
+
                     .card {
                         border: $border-green;
+                        background-color: $color-black;
                         border-radius: $border-radius;
                         padding: 5em;
                     }
@@ -258,9 +263,11 @@ body {
         .contact-icons {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 10%;
             height: 100px;
             background-color: $color-black;
+            border-top: $border-green ;
 
             a {
                 cursor: pointer;
@@ -273,7 +280,7 @@ body {
 
         .copy-modal {
             position: fixed;
-            bottom: 10px;
+            bottom: 105px;
             left: 50%;
             transform: translateX(-50%);
             background-color: $color-green;
