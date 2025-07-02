@@ -232,6 +232,7 @@ body {
                         background-color: $color-black;
                         border-radius: $border-radius;
                         padding: 5em;
+                        width: 100%;
                     }
 
                     .zaapy {
@@ -246,6 +247,94 @@ body {
                         display: none;
 
 
+
+                    }
+
+                    .jack {
+                        display: none;
+                        gap: 10px;
+
+                        h3 {
+                            font-size: 3em;
+                        }
+
+                        p {
+                            margin: 20px;
+
+                            #message {
+                                margin: 20px;
+                            }
+                        }
+
+                        .dealer {
+                            border: solid 1px #e74c3c;
+                            border-radius: 15px;
+                            width: 80%;
+                            margin: 0px;
+
+                        }
+
+                        .player {
+                            border: solid 1px #3498db;
+                            border-radius: 15px;
+                            width: 80%;
+
+                        }
+
+                        .action {
+                            display: flex;
+                            justify-content: center;
+                            gap: 15%;
+
+                            button {
+                                height: 50px;
+                                width: 300px;
+                                border-radius: 15px;
+                                color: white;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                cursor: pointer;
+                                border: solid 1px white;
+                                transition: all 0.3s ease;
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+                                &:hover {
+                                    transform: translateY(-2px);
+                                    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+                                }
+
+                                &:active {
+                                    transform: translateY(1px);
+                                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                                }
+
+                                &#btn-hit {
+                                    background-color: #3498db; // Blue
+
+                                    &:hover {
+                                        background-color: #2980b9; // Darker blue
+                                    }
+                                }
+
+                                &#btn-stand {
+                                    background-color: #2ecc71; // Green
+
+                                    &:hover {
+                                        background-color: #27ae60; // Darker green
+                                    }
+                                }
+
+                                &#btn-restart {
+                                    background-color: #e74c3c; // Red
+
+                                    &:hover {
+                                        background-color: #c0392b; // Darker red
+                                    }
+                                }
+                            }
+                        }
 
                     }
 

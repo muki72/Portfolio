@@ -176,12 +176,82 @@ body main .container .project-container .project-cards .card {
   background-color: #1A1A1A;
   border-radius: 15px;
   padding: 5em;
+  width: 100%;
 }
 body main .container .project-container .project-cards .zaapy {
   display: flex;
 }
 body main .container .project-container .project-cards .diet {
   display: none;
+}
+body main .container .project-container .project-cards .jack {
+  display: none;
+  gap: 10px;
+}
+body main .container .project-container .project-cards .jack h3 {
+  font-size: 3em;
+}
+body main .container .project-container .project-cards .jack p {
+  margin: 20px;
+}
+body main .container .project-container .project-cards .jack p #message {
+  margin: 20px;
+}
+body main .container .project-container .project-cards .jack .dealer {
+  border: solid 1px #e74c3c;
+  border-radius: 15px;
+  width: 80%;
+  margin: 0px;
+}
+body main .container .project-container .project-cards .jack .player {
+  border: solid 1px #3498db;
+  border-radius: 15px;
+  width: 80%;
+}
+body main .container .project-container .project-cards .jack .action {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+}
+body main .container .project-container .project-cards .jack .action button {
+  height: 50px;
+  width: 300px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: solid 1px white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+body main .container .project-container .project-cards .jack .action button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+body main .container .project-container .project-cards .jack .action button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body main .container .project-container .project-cards .jack .action button#btn-hit {
+  background-color: #3498db;
+}
+body main .container .project-container .project-cards .jack .action button#btn-hit:hover {
+  background-color: #2980b9;
+}
+body main .container .project-container .project-cards .jack .action button#btn-stand {
+  background-color: #2ecc71;
+}
+body main .container .project-container .project-cards .jack .action button#btn-stand:hover {
+  background-color: #27ae60;
+}
+body main .container .project-container .project-cards .jack .action button#btn-restart {
+  background-color: #e74c3c;
+}
+body main .container .project-container .project-cards .jack .action button#btn-restart:hover {
+  background-color: #c0392b;
 }
 body main .container .project-container .project-cards .screen {
   width: 80%;
