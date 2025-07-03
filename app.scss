@@ -145,18 +145,8 @@ body {
             h2 {
                 margin-top: 2em;
                 text-align: center;
-                background-image: url('assets/background.png');
-                background-size: cover;
-                background-position: left;
                 text-shadow: $text-shadow-green;
-
-
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-
-
                 background-clip: text;
-                color: transparent;
             }
 
             p {
